@@ -1,7 +1,24 @@
 aid: jetway
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/jetway.png
 name: Jetway
-description: Jetway is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Jetway was surfaced as a 500 Global portfolio lead pointing at nextravel.com. Enrichment
+  found that nextravel.com now 301-redirects to TravelPerk (www.travelperk.com), which itself redirects
+  to www.perk.com, an all-in-one business travel and expense-management platform. NexTravel was a US
+  corporate-travel startup acquired by TravelPerk; it no longer operates as an independent brand and
+  publishes no public developer API, API documentation, developer portal, or /.well-known discovery
+  documents at nextravel.com (every probed path soft-404s to the Perk marketing site). This profile is
+  retained as an acquired/redirected lead with no independent developer surface to enrich.
 url: https://raw.githubusercontent.com/api-evangelist/jetway/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +26,19 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired-redirect
+x-enrichment-note: nextravel.com 301 -> travelperk.com -> perk.com; no public API/docs/well-known found;
+  only the mechanical domain-security probe yielded a real artifact.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Travel
+- Corporate Travel
+- Business Travel
+- Expense Management
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/jetway-domain-security.yml
 - type: Website
   url: https://nextravel.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
