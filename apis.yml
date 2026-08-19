@@ -29,7 +29,7 @@ x-tier-reason: portfolio-lead
 x-status: acquired-redirect
 x-enrichment-note: nextravel.com 301 -> travelperk.com -> perk.com; no public API/docs/well-known found;
   only the mechanical domain-security probe yielded a real artifact.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
