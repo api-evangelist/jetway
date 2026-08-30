@@ -57,6 +57,11 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/travelperk/
+  name: TravelPerk
+  x-relationship: acquired
+  x-evidence: "NexTravel was a US corporate-travel startup acquired by TravelPerk; it no longer operates as an independent brand and publishes no public developer API, API documentation, developer portal, or /."
 - type: DomainSecurity
   url: security/jetway-domain-security.yml
 - type: Website
