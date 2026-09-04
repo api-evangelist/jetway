@@ -21,6 +21,8 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+  source:
+  - {url: 'https://nextravel.com', status: 301, note: 'declared website redirects to https://www.perk.com/ — a different registrable domain (nextravel.com -> perk.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/jetway.png
 name: Jetway
 description: Jetway was surfaced as a 500 Global portfolio lead pointing at nextravel.com. Enrichment
